@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:padding="8dp"
+    android:background="#262626">
+
+    <FrameLayout
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/posterWatchList"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_watchlistTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Title"
+            android:textColor="#cccccc"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMDB: "
+                android:textColor="#cccccc"/>
+            <TextView
+                android:id="@+id/txt_watchlistImdb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#cccccc"/>
+
+            <TextView
+                android:paddingLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type: "
+                android:textColor="#cccccc"/>
+            <TextView
+                android:id="@+id/txt_watchlistType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="movie"
+                android:textColor="#cccccc"/>
+
+            <TextView
+                android:id="@+id/txt_watchlistYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2015"
+                android:textColor="#cccccc"
+                android:textStyle="italic"
+                android:gravity="right"
+                android:paddingRight="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genre: "
+                android:textColor="#cccccc"/>
+            <TextView
+                android:id="@+id/txt_watchlistGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sci-fi"
+                android:textColor="#cccccc"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You "
+                android:textColor="#cccccc"/>
+            <TextView
+                android:id="@+id/txt_watchlistIsWatched"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="did not watched"
+                android:textColor="#cccccc"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" this."
+                android:textColor="#cccccc"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <Button
+                    android:id="@+id/btn_watchlistWatched"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_tick"/>
+
+                <Button
+                    android:id="@+id/btn_watchlistRowDelete"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:drawable/ic_delete" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txt_watchlistURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
